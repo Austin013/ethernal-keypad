@@ -28,8 +28,8 @@
                     &kp ESC   &kp N1    &kp N2   &kp N3    &kp N4    &kp N5  &kp N6
                     &kp TAB   &kp Q     &kp W    &kp E     &kp R     &kp T   &kp N7
         &kp MINUS   &kp LSHFT &kp A     &kp S    &kp D     &kp F     &kp G   &kp N8
-        &none       &kp LALT &kp Z     &kp X    &kp C     &kp V     &kp B   &kp N9
-        &kp EQUAL     &kp LCTRL &sl FUNC  &kp LALT           &kp SPACE         &lt ARROW N01
+        &kp A       &kp LALT  &kp Z     &kp X    &kp C     &kp V     &kp B   &kp N9
+        &kp EQUAL   &kp LCTRL &none     &kp LALT           &kp SPACE         &none
       >;
     };
 
