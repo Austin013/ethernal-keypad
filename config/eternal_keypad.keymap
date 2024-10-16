@@ -19,17 +19,28 @@
       zmk,kscan = &kscan0;
       zmk,matrix-transform = &default_transform;
   };
+  behaviors {
+        td: tapdance {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPDANCE";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+   };
 
   keymap {
     compatible = "zmk,keymap";
 
     default_layer {
       bindings = <
-                    &kp ESC   &kp N1    &kp N2   &kp N3    &kp N4    &kp N5  &kp N6
-                    &kp TAB   &kp Q     &kp W    &kp E     &kp R     &kp T   &kp N7
-        &kp MINUS   &kp LSHFT &kp A     &kp S    &kp D     &kp F     &kp G   &kp N8
-        &kp A       &kp LALT  &kp Z     &kp X    &kp C     &kp V     &kp B   &kp N9
-        &kp EQUAL   &kp LCTRL &none     &kp LALT           &kp SPACE         &none
+                    &kp ESC   &td LS(N1) N1     &td LS(N2) N2   &td LS(N3) N3   &td LS(N4) N4    &td LS(N5) N5  &td LS(N6) N6
+                    &kp TAB   &kp Q             &kp W           &kp E           &kp R            &kp T          &td LS(N7) N7
+        &none       &kp LCTRL &kp A             &kp S           &kp D           &kp F            &kp G          &td LS(N8) N8
+        &none       &kp LALT  &kp Z             &kp X           &kp C           &kp V            &kp B          &td LS(N9) N9
+        &none       &kp LSHFT &none             &kp LALT        &kp SPACE       &none
       >;
     };
 
