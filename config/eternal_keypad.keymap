@@ -38,9 +38,9 @@
       bindings = <
                     &kp ESC   &td LS(N1) N1     &td LS(N2) N2   &td LS(N3) N3   &td LS(N4) N4    &td LS(N5) N5  &td LS(N6) N6
                     &kp TAB   &kp Q             &kp W           &kp E           &kp R            &kp T          &td LS(N7) N7
-        &none       &kp LCTRL &kp A             &kp S           &kp D           &kp F            &kp G          &td LS(N8) N8
-        &none       &kp LALT  &kp Z             &kp X           &kp C           &kp V            &kp B          &td LS(N9) N9
-        &none       &kp LSHFT &none             &kp LALT        &kp SPACE       &none
+        &none       &kp LSHFT &kp A             &kp S           &kp D           &kp F            &kp G          &td LS(N8) N8
+        &none       &kp LALT    &kp Z             &kp X           &kp C           &kp V            &kp B          &td LS(N9) N9
+        &none       &kp LCTRL &none             &kp SPACE       &kp TAB       &none
       >;
     };
 
