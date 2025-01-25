@@ -40,7 +40,7 @@
                     &kp LCTRL  &kp Q             &kp W           &kp E           &kp R            &kp T          &td LS(N7) N7
         &none       &kp TAB    &kp A             &kp S           &kp D           &kp F            &kp G          &td LS(N8) N8
         &none       &kp LSHFT  &kp Z             &kp X           &kp C           &kp V            &kp B          &td LS(N9) N9
-        &none       &none      &none             &kp LALT       &kp SPACE       &none
+        &none       &none      &none             &kp I       &kp SPACE       &none
       >;
     };
 
